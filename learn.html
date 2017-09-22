@@ -3,31 +3,50 @@
 		<meta charset="utf-8">
 		<title>Learn More</title>
 		<link href="main.css?v=3.7" rel="stylesheet" type="text/css" />
+		<script>
+var mfunc = function() {
+console.log("mfunc opened");
+var help = document.getElementById("help");
+help.style.display = "block";
+var button = document.getElementById("helpbutton");
+button.style.display = "none";
+};
+</script>
+
 	</head>
 	<body>
 
 		<ul id="nav-bar">
 			<div id="nav-bar-items">
-			<li class="nav-bar-list"><a class="nav-bar-links" href="http://ec2-18-220-161-184.us-east-2.compute.amazonaws.com/creative-project-1">Home</a></li>
-			<li class="nav-bar-list"><a class="nav-bar-links" href="">Learn More</a></li>
-			<li class="nav-bar-list"><a class="nav-bar-links" href="http://ec2-18-220-161-184.us-east-2.compute.amazonaws.com/creative-project-1/donate">Donate</a></li>
+			<li class="nav-bar-list"><a class="nav-bar-links" href="index.html">Home</a></li>
+			<li class="nav-bar-list"><a class="nav-bar-links" href="learn.html">Learn More</a></li>
+			<li class="nav-bar-list"><a class="nav-bar-links" href="donate.html">Donate</a></li>
 			</div>
 		</ul>
 
 		<div id="header">
 			HURRICANE MARIA RELIEF
 		</div>
+		<div class="spacer">  </div>
+<div id="text">
+<h1>Information</h1>
+<p>Hurricane Maria is the worst hurricane to make landfall in the United States in nearly 100 years. A category 4 storm, with winds up to 155 miles per hour, it hit Puerto Rico and the island of Dominica directly and wreaked havoc. 15 people have been reported dead on Dominica, Puerto Rico has been completely cut off from electricity and will not be able to regain power for months, and whole towns will need to be rebuilt. Governor Ricardo Rossello has claimed that the storm has 'destroyed us'. Floods, storm surges, and lingering rainfall are causing increasing problems. Puerto Rico had recently declared bankrupcy and were already in a state of economic turmoil. This storm has gravely exacerbated their situation, destroying the little financial assets they did have. Puerto Rico is in a grave state and desperately need our help.</p>
+</div>
+<button class="button" id="helpbutton" onclick="mfunc()">Want to Learn More?</button>
+<div class="hidden" id="help">
+<h1>Check out these links!</h1>
+<table>
+<tr>
+<th><a href='https://www.cdc.gov/disasters/index.html'>Center for Disease Control</a></th>
+<th><a href='https://www.nytimes.com/2017/09/21/us/hurricane-maria-puerto-rico.html?mcubz=0'>New York Times</a></th>
+<th><a href='http://www.weather.gov/akq/Maria'>National Weather Service</a></th>
+</tr>
+</table>
+</div>
 
-		<h1>Where to Learn More</h1>
+<div class="spacer"></div>
 
-		<p>Here are some helpful websites with additional information about natural disasters:</p>
-
-		<ul>
-			<li><a href="https://www.cdc.gov/disasters/index.html">Center for Disease Control and Prevention</a></li>
-			<li><a href="https://www.cdc.gov/disasters/index.html">Link 2</a></li>
-			<li><a href="https://www.cdc.gov/disasters/index.html">Link 3</a></li>
-		</ul>
-
+<div id="footer">PRAY FOR PUERTO RICO</div>
 	</body>
 
 </html>
